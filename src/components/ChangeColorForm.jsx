@@ -40,11 +40,11 @@ export default function ChangeColorForm() {
           : { backgroundColor: rgbColor }
       }
     >
-      <form onSubmit={handleSubmit}>
-        <label>Введите цвет в формате HEX</label>
+      <form onSubmit={handleSubmit} className="form-input">
+        {/*<label>Введите цвет в формате HEX</label>*/}
         <input type="text" value={form} onChange={handleChange} />
       </form>
-      <div className="rgbField">{rgbColor}</div>
+      <div className="rgb-field">{rgbColor}</div>
     </div>
   );
 }
